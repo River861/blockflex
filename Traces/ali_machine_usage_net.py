@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-NET_IN = True
+NET_IN = False
 
 import matplotlib
 matplotlib.use("Agg")
@@ -34,9 +34,9 @@ Graph.set_xticklabels(['0','1','2','3','4','5','6','7'],fontsize=11)
 Graph.xaxis.set_ticks_position('none')
 Graph.set_xlabel('Time (days)', fontsize=14)
 
-YTicks = np.arange(0,40,5)
+YTicks = np.arange(0,60,10)
 Graph.set_yticks(YTicks)
-Graph.set_yticklabels(['0', '5', '10', '15', '20', '25', '30', '35'],fontsize=11)
+Graph.set_yticklabels(['0', '10', '20', '30', '40', '50'], fontsize=11)
 Graph.yaxis.set_ticks_position('none')
 
 Graph.set_axisbelow(True)
@@ -45,7 +45,7 @@ Graph.yaxis.grid(color='lightgrey', linestyle='solid')
 Graph.grid(b=True, which='minor')
 
 Graph.set_xlim(0, len(x_values))
-Graph.set_ylim((0,35))
+Graph.set_ylim((0, 60))
 
 PDF.savefig(Figure, bbox_inches='tight')
 

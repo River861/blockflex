@@ -1,5 +1,5 @@
 FILE = "Data/machine_usage.csv"
-NET_IN = True
+NET_IN = False
 """
 machine_usage.csv format:
 +------------------------------------------------------------------------------------------+
