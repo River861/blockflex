@@ -1,0 +1,6 @@
+*.csv.gz
+*.csv
+*.pdf
+*.dat
+Traces/Data
+Traces/Results
