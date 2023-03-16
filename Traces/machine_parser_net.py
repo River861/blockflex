@@ -25,7 +25,7 @@ for line in infile:
     machine_id, time_stamp, cpu_util_percent, mem_util_percent, mem_gps, mkpi, net_in, net_out, disk_io_percent = line.strip().split(",")
     time_stamp = float(time_stamp)
     net_traffic = net_in if NET_IN else net_out
-    if net_traffic:
+    if net_traffic and machine_id == 'm_1':
         net_traffic = float(net_traffic)
         if net_traffic < 0 or net_traffic > 100: 
             continue

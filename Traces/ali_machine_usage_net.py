@@ -23,7 +23,7 @@ PDF = PdfPages(f"Results/ali_machine_usage_{'net_in' if NET_IN else 'net_out'}.p
 
 plt.plot(x_values, y_values, '-c', label="avg")
 
-YLabel = plt.ylabel("Network BW Util (%)", multialignment='center', fontsize=12)
+YLabel = plt.ylabel("Net Tpt (%)", multialignment='center', fontsize=12)
 YLabel.set_position((0.0,0.5))
 YLabel.set_linespacing(0.5)
 

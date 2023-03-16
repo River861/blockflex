@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-NET_IN = True
+NET_IN = False
 
 import matplotlib
 matplotlib.use("Agg")

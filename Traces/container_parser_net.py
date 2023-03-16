@@ -1,5 +1,5 @@
-FILE = "Data/container_usage.csv"
-NET_IN = True
+FILE = "Data/container_usage_sub.csv"
+NET_IN = False
 """
 container_usage.csv format:
 +-----------------------------------------------------------------------------------------+
