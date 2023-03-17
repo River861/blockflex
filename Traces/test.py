@@ -20,9 +20,8 @@ if DO_STAGE_ONE:
             time_stamp = float(time_stamp)
             # if int(time_stamp) % 100 != 0:
             #     continue
-            net_traffic = net_in + net_out
-            if net_traffic:
-                net_traffic = float(net_traffic)
+            if net_in and net_out:
+                net_traffic = float(net_in) + float(net_out)
                 if net_traffic < 0 or net_traffic > 100: 
                     continue
                 if machine_id not in trace_map:
