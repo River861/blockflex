@@ -1,4 +1,4 @@
-FILE = "Data/container_usage_sub.csv"
+FILE = "Data/cu_m_2549.csv"  # container_usage_sub
 NET_IN = False
 """
 container_usage.csv format:
@@ -20,7 +20,7 @@ container_usage.csv format:
 total = {}
 count = {}
 ids = set()
-max_size = 30000
+max_size = 3000
 
 with open(FILE,'r') as infile:
     for line in infile:
@@ -45,6 +45,6 @@ with open(FILE,'r') as infile:
 outfile = open("ali_container_usage.dat", 'w')
 out_list =[]
 for key,v in sorted(total.items()):
-    out_list.append(total[key]/count[key])
+    out_list.append(total[key])  # /count[key]
 print(",".join(map(str,out_list)), file=outfile)
 outfile.close()
